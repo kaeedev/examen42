@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   first_word.c                                       :+:      :+:    :+:   */
+/*   putstr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 12:19:27 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/06/16 12:31:18 by luviso-p         ###   ########.fr       */
+/*   Created: 2025/06/16 13:36:18 by luviso-p          #+#    #+#             */
+/*   Updated: 2025/06/17 16:18:17 by lalbe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Escribir un string
+
 #include <unistd.h>
 
-int	main(int argc, char **argv)
+void	putstr(char *str)
 {
 	int	i;
 
 	i = 0;
-	if (argc == 2)
+	while (str[i])
 	{
-		while ((argv[1][i] == 9) || (argv[1][i] == 32))
-			i ++;
-		while (((argv[1][i] != 9) && (argv[1][i] != 32)) && argv[1][i])
-		{
-			write(1, &argv[1][i], 1);
-			i ++;
-		}
+		write(1, &str[i], 1);
+		i ++;
 	}
+}
+
+int	main(int argc, char **argv)
+{
+	if (argc == 2)
+		putstr(argv[1]);
 	write(1, "\n", 1);
 	return (0);
 }

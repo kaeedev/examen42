@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   fizzbuzz.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 12:40:09 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/06/16 13:30:46 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/06/17 16:17:34 by lalbe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Mostrar los numeros del 1 al 100 y si son multiplos de 3 escribir fizz, de 5 buzz y de ambos fizzbuzz
 #include <unistd.h>
 
 void	write_numbers(int n)
