@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   is_power_of_2.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:03:03 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/06/24 14:28:17 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/06/23 17:05:57 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Funcion que nos dice si un numero es potencia de 2 o no
 
 int	is_power_of_2(unsigned int n)
 {
