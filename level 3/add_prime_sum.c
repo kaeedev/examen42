@@ -15,17 +15,25 @@
 #include <unistd.h>
 
 //Para pasar el argumento string a entero
-int	ft_atoi(char *s)
+int	ft_atoi(char *str)
 {
 	int	result;
+	int	sign;
 
 	result = 0;
-	while (*s)
+	sign = 1;
+	while (*str == 32 || (*str >= 9 && *str <= 13))
+		str ++;
+	if (*str == '-')
+		sign = -1;
+	if (*str == '-' || *str == '+')
+		str ++;
+	while (*str >= '0' && *str <= '9')
 	{
-		result = (result * 10) + (*s - '0');
-		s ++;
+		result = result * 10 + *str - '0';
+		str ++;
 	}
-	return (result);
+	return (sign * result);
 }
 
 //Comprobar si es un numero primo o no
