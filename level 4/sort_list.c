@@ -6,7 +6,7 @@
 /*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:39:31 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/07/14 14:45:16 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/08/21 11:51:34 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,22 @@ Las funciones pasadas como cmp siempre devolverán un valor diferente de
 
 t_list *sort_list(t_list *lst, int (*cmp)(int, int))
 {
-	int	tmp; //almacena el valor del nodo
-	t_list *begin = lst; //almacena el primer nodo de la lista
+	int	tmp;
+	t_list *begin = lst;
 
-	while (lst && lst->next) //cuando haya nodos
+	while (lst && lst->next)
 	{
-		if ((*cmp)(lst->data, lst->next->data) == 0) //si no esta en orden
+		if ((*cmp)(lst->data, lst->next->data) == 0)
 		{
-			//(swap)
-			tmp = lst->data; //almacenamos el valor del primer nodo
-			lst->data = lst->next->data; //ahora el primer nodo vale el valor del siguiente nodo
-			lst->next->data = tmp; //el siguiente nodo ahora vale lo que tenia almacenado tmp que es el valor del primer nodo
-			lst = begin; //reiniciamos para que el bucle empiece de nuevo
+			tmp = lst->data;
+			lst->data = lst->next->data;
+			lst->next->data = tmp;
+			lst = begin;
 		}
-		else //si no esta desordenado, avanza sin hacer nada
+		else
 			lst = lst->next;
 	}
-	return (begin); //retorna el primer nodo de la lista
+	return (begin);
 }
 
 //cmp es una funcion que compara dos enteros

@@ -7,11 +7,11 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 
 	if (a == 0 || b == 0)
 		return (0);
-	if (a > b) //si a es mayor q b, le asignamos a n el valor de a. n debe ser el valor mayor e a y b
+	if (a > b)
 		n = a;
-	else //sino pues asignamos a n el valor e b
+	else 
 		n = b;
-	while (1) //bucle infinito hasta encontrar el mcm de ambos numeros
+	while (1)
 	{
 		if (n % a == 0 && n % b == 0)
 			return (n);

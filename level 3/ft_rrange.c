@@ -6,10 +6,10 @@
 
 int	*ft_rrange(int start, int end)
 {
-	int	*range; // puntero al primer valor del array
+	int	*range;
 	int i = 0;
-	int	step = 1; //para incrementar o decrementar el valor de start
-	int	n = end - start; //diferencia entre end y start
+	int	step = 1;
+	int	n = end - start;
 
 	if (n < 0)
 		(n *= -1);

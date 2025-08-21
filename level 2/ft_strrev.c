@@ -6,7 +6,7 @@
 /*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 11:19:20 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/06/19 11:30:59 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/08/21 12:07:16 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,4 @@ char	*ft_strrev(char *str)
 		i ++;
 	}
 	return (str);
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-		printf("%s\n", ft_strrev(argv[1]));
-	return (0);
 }

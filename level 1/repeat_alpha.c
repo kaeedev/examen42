@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   repeat_alpha.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 11:04:48 by lalbe             #+#    #+#             */
-/*   Updated: 2025/06/17 16:18:39 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/08/21 12:08:11 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,4 @@ void repeat_alpha(char *str)
             write(1, str, 1);
         str++;
     }
-}
-
-int main(int argc, char **argv)
-{
-    int i;
-
-    i = 0;
-    if (argc == 2)
-        repeat_alpha(argv[1]);
-    write(1, "\n",1);
-    return (0);
 }

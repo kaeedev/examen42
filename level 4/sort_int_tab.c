@@ -6,7 +6,7 @@
 /*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:32:59 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/07/14 14:38:56 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/08/21 11:50:23 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ void	sort_int_tab(int *tab, unsigned int size)
 
 	while (i < (size - 1))
 	{
-		if (tab[i] > tab[i + 1]) //si el elemento actual es mayor al que el siguiente elmento. Esta desordenado
+		if (tab[i] > tab[i + 1])
 		{
-			tmp = tab[i]; //guardamos el valor de tab en tmp
-			tab[i] = tab[i + 1]; //ahora tab vale la siguiente posicion de tab
-			tab[i + 1] = tmp; //ahora la siguiente posicion de tab vale tmp q es el valor que tenia tab al principio
-			i = 0; //reiniciamos para que el bucle empiece de nuevo
+			tmp = tab[i];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = tmp;
+			i = 0;
 		}
-		else //si no esta desordenado, avanza sin hacer nada
+		else
 			i ++;
 	}
 }

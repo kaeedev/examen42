@@ -6,7 +6,7 @@
 /*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:01:32 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/07/14 14:15:00 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/08/21 11:47:08 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,24 +33,24 @@ int	main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		while(argv[1][i] != '\0') //recorremos todo el string hasta el final
+		while(argv[1][i] != '\0')
 			i ++;
-		while(i >= 0) //recorrer el string hacia atras
+		while(i >= 0)
 		{
-			while (argv[1][i] == '\0' || argv[1][i] == ' ' || argv[1][i] == '\t') //saltar espacios y tabs desdde la derecha
+			while (argv[1][i] == '\0' || argv[1][i] == ' ' || argv[1][i] == '\t')
 				i --;
 			end = i; //final de la palabra
-			while (argv[1][i] && argv[1][i] != ' ' && argv[1][i] != '\t') //moverse a la izquierda hasta encontrar el inicio de la palabra
+			while (argv[1][i] && argv[1][i] != ' ' && argv[1][i] != '\t')
 				i --;
-			start = i + 1; //marca el incio de la palabra
-			int	flag; //para chequear si es la primera palabra
+			start = i + 1;
+			int	flag;
 			flag = start;
-			while (start <= end) //imprimir la palabra encontrada, de start a end
+			while (start <= end)
 			{
 				write (1, &argv[1][start], 1);
 				start ++;
 			}
-			if (flag != 0) //imprimir un espacio si no es la ultima palabra
+			if (flag != 0)
 				write (1, " ", 1);
 		}
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   strcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 10:32:09 by lalbe             #+#    #+#             */
-/*   Updated: 2025/06/17 16:20:07 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/08/21 12:07:54 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,4 @@ char    *strcpy(char *s1, char *s2)
     }
     s1[i] = '\0';
     return (s1);
-}
-
-int main(void)
-{
-    char s1[100];
-    char *s2 = "LOOOOL";
-
-    printf("%s\n", strcpy(s1, s2));
-    return (0);
 }

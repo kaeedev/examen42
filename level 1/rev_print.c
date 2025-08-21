@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rev_print.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 11:25:06 by lalbe             #+#    #+#             */
-/*   Updated: 2025/06/17 16:18:53 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/08/21 12:08:05 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,4 @@ void rev_print(char *str)
         write(1, &str[i], 1);
         i --;
     }
-}
-
-int main(int argc, char **argv)
-{
-    if (argc == 2)
-        rev_print(argv[1]);
-    write(1, "\n", 1);
-    return (0);
 }

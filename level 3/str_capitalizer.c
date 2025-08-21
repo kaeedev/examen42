@@ -5,7 +5,7 @@ seguido de \n.*/
 
 #include <unistd.h> //write
 
-void	rstr_capitalizer(char *str)
+void	str_capitalizer(char *str)
 {
 	int	i = 0;
 
@@ -30,7 +30,7 @@ int	main(int argc, char **argv)
 		i = 1;
 		while (i < argc)
 		{
-			rstr_capitalizer(argv[i]);
+			str_capitalizer(argv[i]);
 			write(1, "\n", 1);
 			i ++;
 		}

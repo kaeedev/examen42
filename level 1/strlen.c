@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   strlen.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 10:50:59 by lalbe             #+#    #+#             */
-/*   Updated: 2025/06/17 16:20:17 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/08/21 12:07:46 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,4 @@ int ft_strlen(char *str)
         length++;
     }
     return (length);
-}
-
-int main(void)
-{
-    int length = ft_strlen("Hola");
-    printf("%d\n", length);
-    return (0);
 }

@@ -15,7 +15,7 @@ int	pgcd(int a, int b)
 	int	pgcd;
 
 	i = 1;
-	pgcd = 1; //variable para almacenar el mayor comun divisor
+	pgcd = 1; 
 	while (i <= a && i <= b)
 	{
 		if (a % i == 0 && b % i == 0)
