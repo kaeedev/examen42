@@ -6,7 +6,7 @@
 /*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 18:42:13 by luviso-p          #+#    #+#             */
-/*   Updated: 2025/07/09 18:43:54 by luviso-p         ###   ########.fr       */
+/*   Updated: 2025/08/07 17:29:37 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,16 @@ int	main(int argc, char **argv)
 			str ++;
 		while (*str)
 		{
-			if (!first && (*str != ' ' && *str != '\t'))  //Si no es la primera palabra y si el caracter actual no es un espacio ni tab...
-														// significa que estamos en el inicio de una nueva palabra, por lo que escribimos un espacio
-				write(1, "   ", 3); //Escribimos tres espacios
-			while (*str && *str != ' ' && *str != '\t') //Escribimos la palabra
+			if (!first && (*str != ' ' && *str != '\t'))  
+				write(1, "   ", 3);
+			while (*str && *str != ' ' && *str != '\t')
 			{
 				write(1, str, 1);
 				str ++;
 			}
-			while (*str == ' ' || *str == '\t') //Saltar espacios despues de la palabra
+			while (*str == ' ' || *str == '\t')
 				str ++;
-			first = 0; //Ya no sera nunca la primera palabra
+			first = 0;
 		}
 	}
 	write(1, "\n", 1);

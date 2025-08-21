@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   max.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lalbe <lalbe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: luviso-p <luviso-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 15:42:03 by lalbe             #+#    #+#             */
-/*   Updated: 2025/06/24 15:45:47 by lalbe            ###   ########.fr       */
+/*   Updated: 2025/08/07 17:27:29 by luviso-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int max(int *tab, unsigned int len)
     int result;
     unsigned int    i;
 
-    if (len == 0)
+    if (len == 0 || !tab)
         return (0);
     i = 0;
     result = tab[i];
